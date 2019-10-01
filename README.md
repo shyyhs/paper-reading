@@ -17,4 +17,11 @@ RNNと比べてSelf-Attention Networks (SAN)が単語の位置の情報をうま
 ここでLearning Objectives Matter Moreという結論が出た。SANモデルでも単語位置の情報をうまく取れるということも証明した。
 
 
+## Extreme Adaptation for Personalized Neural Machine Translation (Michel and **Neubig**, arXiv, 2018)
+
+同じ言語でも人によって癖があるので、従来の翻訳モデルは人の癖 (features)を無視するか、あるいは特定な人のデータでFine-tunningする。しかし、無視すれば翻訳の質へ影響がある、Fine-tunningしたらParameter costとoverfittingの問題がある。
+
+本研究では人ごとに特定なbias vectorを与え、出力層のsoftmaxのところへ加え、人の特徴を考慮したモデルを作った。full_biasのモデルではすべての人にvocab sizeのbiasを作り、人と人の関連性を考えていない。fact_biasモデルではr個の特徴dimを考え、speakerを特徴空間へ投影し、biasを計算する、この手法によって人の関連性が考慮され、parameterも大幅に減少した。結果としてはBaselineよりBLEU scoreが0.5 point向上を達成した。
+
+
 
