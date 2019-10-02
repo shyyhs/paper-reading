@@ -28,9 +28,9 @@ RNNと比べてSelf-Attention Networks (SAN)が単語の位置の情報をうま
 
 ## Findings of the First Shared Task on Machine Translation Robustness (Li et al., arXiv, 2019)
 
-ツイッターなどのデータにはいろんなノイズがあるので、MTにとっては大きな挑戦と言われる。このようなデータを翻訳するタスクがmachine translation robustnessと言う。
+ツイッターなどのデータには様々なノイズがあるので、MTにとっては大きな挑戦だといわれている。このようなデータを翻訳するタスクをmachine translation robustnessと言う。
 
-本論文ではネット上のデータから作ったMTNTというデータセットを挑戦したsystemsを分析して、最も有効な手法をsummaryした。分析によると、data cleaningはBLEUを5 pointsぐらい向上させた。絵文字などを翻訳しなくて直接にコピーするplaceholdersという方法は1.4 points向上させた。Back-translation (BT)などのdata augmentationは5.8 points。domainやdata type (real or BT) のタグ付けのfine-tuningもすごく役に立つ。Ensemblesはどのsystemにおいてもsingle modelより精度が高い。
+本論文ではネット上のデータから作ったMTNTというデータセットに取り組んだsystemsを分析して、最も有効な手法をsummaryした。分析によると、data cleaningはBLEUを5 points程度向上させた。絵文字などを翻訳せず直接コピーするplaceholdersという方法は1.4 points向上させた。Back-translation (BT)などのdata augmentationは5.8 points。domainやdata type (real or BT) のタグ付けのfine-tuningも非常に有効。Ensemblesはどのsystemにおいてもsingle modelより精度が高い。
 
 
 
