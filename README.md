@@ -17,17 +17,22 @@ RNNと比べてSelf-Attention Networks (SAN)が単語の位置の情報をうま
 ここでLearning Objectives Matter Moreという結論が出た。SANモデルでも単語位置の情報をうまく取れるということも証明した。
 
 
+
 ## Extreme Adaptation for Personalized Neural Machine Translation (Michel and **Neubig**, arXiv, 2018)
 
 同じ言語でも人によって癖があるので、従来の翻訳モデルは人の癖 (features)を無視するか、あるいは特定な人のデータでfine-tunningする。しかし、無視すれば翻訳の質へ影響がある。fine-tunningしたらparameter costとoverfittingの問題がある。
 
 本研究では人ごとに固有なbias vectorを与え、出力層のsoftmaxのところへ加え、人の特徴を考慮したモデルを作った。full_biasのモデルではすべての人にvocab sizeのbiasを作り、人と人の関連性を考えていない。fact_biasモデルではr個の特徴dimを考え、speakerを特徴空間へ投影し、biasを計算する。この手法によって人の関連性が考慮され、parameterも大幅に減少した。結果としてはBaselineよりBLEU scoreが0.5 point向上を達成した。
 
+# 10.2
+
 ## Findings of the First Shared Task on Machine Translation Robustness (Li et al., arXiv, 2019)
 
 ツイッターなどのデータにはいろんなノイズがあるので、MTにとっては大きな挑戦と言われる。このようなデータを翻訳するタスクがmachine translation robustnessと言う。
 
 本論文ではネット上のデータから作ったMTNTというデータセットを挑戦したsystemsを分析して、最も有効な手法をsummaryした。分析によると、data cleaningはBLEUを5 pointsぐらい向上させた。絵文字などを翻訳しなくて直接にコピーするplaceholdersという方法は1.4 points向上させた。Back-translation (BT)などのdata augmentationは5.8 points。domainやdata type (real or BT) のタグ付けのfine-tuningもすごく役に立つ。Ensemblesはどのsystemにおいてもsingle modelより精度が高い。
+
+
 
 
 
