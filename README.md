@@ -32,6 +32,10 @@ RNNと比べてSelf-Attention Networks (SAN)が単語の位置の情報をうま
 
 本論文ではネット上のデータから作ったMTNTというデータセットに取り組んだsystemsを分析して、最も有効な手法をsummaryした。分析によると、data cleaningはBLEUを5 points程度向上させた。絵文字などを翻訳せず直接コピーするplaceholdersという方法は1.4 points向上させた。Back-translation (BT)などのdata augmentationは5.8 points。domainやdata type (real or BT) のタグ付けのfine-tuningも非常に有効。Ensemblesはどのsystemにおいてもsingle modelより精度が高い。
 
+## Toward Robust Neural Machine Translation for Noisy Input Sequences (Sperber et al., IWSLT, 2017)
+
+
+
 
 
 
