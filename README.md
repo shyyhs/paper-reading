@@ -34,6 +34,12 @@ RNNと比べてSelf-Attention Networks (SAN)が単語の位置の情報をうま
 
 ## Toward Robust Neural Machine Translation for Noisy Input Sequences (Sperber et al., IWSLT, 2017)
 
+## An Empirical Comparison of Domain Adaption Methods for Neural Machine Translation (Chu, Dabre and Kurohashi, ACL, 2017)
+
+# 10.3
+
+## Exploiting Out-of-Domain Parallel Data through Multilingual Transfer Learning for Low-Resource Neural Machine Translation (Imankulova et al., arXiv, 2019)
+
 
 
 
