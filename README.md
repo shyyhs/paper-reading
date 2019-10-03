@@ -36,6 +36,10 @@ RNNと比べてSelf-Attention Networks (SAN)が単語の位置の情報をうま
 
 ## An Empirical Comparison of Domain Adaption Methods for Neural Machine Translation (Chu, Dabre and Kurohashi, ACL, 2017)
 
+データが少ないdomainにおいて、fine-tuningがよく使われている。まず大量のout-of-domainのデータでトレーニングし、最後の数千stepsはin-domainデータのみに訓練。手間かかずにモデル自体も変わらないので様々なシチュエーションでよく使われている。従来の問題としてはin-domainのデータが少ないのでoverfittingの問題は非常に深刻である。
+
+本研究ではfine-tuningの時にin-domainのデータのみならずin-domainとout-of-domainのデータをミックスしてfine-tuningする。方法は単純だがover-fittingを確実に避けた。さらに、従来はin-domainデータしか処理できないが、今のモデルはin-domainとout-of-domain両方処理できる。 
+
 # 10.3
 
 ## Exploiting Out-of-Domain Parallel Data through Multilingual Transfer Learning for Low-Resource Neural Machine Translation (Imankulova et al., arXiv, 2019)
