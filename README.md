@@ -45,7 +45,11 @@ RNNと比べてSelf-Attention Networks (SAN)が単語の位置の情報をうま
 ## Exploiting Out-of-Domain Parallel Data through Multilingual Transfer Learning for Low-Resource Neural Machine Translation (Imankulova et al., arXiv, 2019)
 
 
+# 10.4
 
+## Exploring Transfer Learning and Domain Data Selection for the Bio-medical translation (Hira et al., WMT, 2019)
+
+## Target Conditioned Sampling: Optimizing Data Selection for Multilingual Neural Machine Translation (Wang and Neubig, ACL, 2019)
 
 
 
