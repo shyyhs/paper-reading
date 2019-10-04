@@ -51,7 +51,7 @@ RNNと比べてSelf-Attention Networks (SAN)が単語の位置の情報をうま
 
 ## Target Conditioned Sampling: Optimizing Data Selection for Multilingual Neural Machine Translation (Wang and Neubig, ACL, 2019)
 
-
+## H2@BUCC18: Parallel Sentence Extraction from Comparable Corpora Using Multilingual Sentence Embeddings (Bouamor and Sajjad, BUCC, 2019)
 
 
 
