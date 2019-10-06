@@ -34,6 +34,10 @@ RNNと比べてSelf-Attention Networks (SAN)が単語の位置の情報をうま
 
 ## Toward Robust Neural Machine Translation for Noisy Input Sequences (Sperber et al., IWSLT, 2017)
 
+話し言葉の翻訳はノイズがあるので、書き言葉よりNMTのロバスト性が期待されている。本研究ではトレーニングデータセットに適量のノイズを加えて、システムのロバスト性を向上させた。
+
+具体的にノイズが三種類ある：substitution, insertion, deletion。いずれも単純な手法だが、ノイズの量をうまくコントロールすれば翻訳の質の向上が達成できる。三種類のノイズの比例と量について様々な実験をした。トレーニングデータに加えたノイズがテストデータのノイズより少ないほうがいいという結論ができた。
+
 ## An Empirical Comparison of Domain Adaption Methods for Neural Machine Translation (Chu, Dabre and Kurohashi, ACL, 2017)
 
 データが少ないdomainにおいて、fine-tuningがよく使われている。まず大量のout-of-domainのデータでトレーニングし、最後の数千stepsはin-domainデータのみに訓練。手間かかずにモデル自体も変わらないので様々なシチュエーションでよく使われている。従来の問題としてはin-domainのデータが少ないのでoverfittingの問題は非常に深刻である。
