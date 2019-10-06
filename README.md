@@ -53,6 +53,10 @@ RNNと比べてSelf-Attention Networks (SAN)が単語の位置の情報をうま
 
 ## Exploring Transfer Learning and Domain Data Selection for the Bio-medical translation (Hira et al., WMT, 2019)
 
+Bio-medicalのparallelデータが少ない一方、newsなどのデータがすごく多い。本研究ではnewsなどのdomainからbio-medical domainをtransfer learningの手法をデザインした。
+
+Bio-medicalのデータセットを利用し、文ごとに大規模なout-of-domainデータセットからtop nの似ている文を探して新たなin-domainデータセットを作った。Out-of-domainデータセットでトレーニングしたモデルを作ったデータセットとin-domainのデータセットでfine-tuningしてbaselineより +7.5 BLEU score達成した。
+
 ## Target Conditioned Sampling: Optimizing Data Selection for Multilingual Neural Machine Translation (Wang and Neubig, ACL, 2019)
 
 ## H2@BUCC18: Parallel Sentence Extraction from Comparable Corpora Using Multilingual Sentence Embeddings (Bouamor and Sajjad, BUCC, 2019)
