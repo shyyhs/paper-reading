@@ -65,6 +65,8 @@ Bio-medicalのデータセットを利用し、文ごとに大規模なout-of-do
 
 ## Distilling the knowledge in a neural network (Hinton et al., arXiv, 2015)
 
+## Sequence-Level Knowledge Distillation (Kim and Rush, EMNLP, 2016)
+
 
 
 
