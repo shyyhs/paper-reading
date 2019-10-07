@@ -61,5 +61,11 @@ Bio-medicalのデータセットを利用し、文ごとに大規模なout-of-do
 
 ## H2@BUCC18: Parallel Sentence Extraction from Comparable Corpora Using Multilingual Sentence Embeddings (Bouamor and Sajjad, BUCC, 2019)
 
+# 10.7
+
+## Distilling the knowledge in a neural network (Hinton et al., arXiv, 2015)
+
+
+
 
 
