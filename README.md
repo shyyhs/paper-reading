@@ -71,7 +71,6 @@ Bio-medicalのデータセットを利用し、文ごとに大規模なout-of-do
 
 ## Chinese-Portuguese Machine Translation: A Study on Building Parallel Corpora from Comparable Texts (Liu et al., arXiv, 2018)
 
-
-
+## Bridging the Gap between Training and Inference for Neural Machine Translation (Zhang et al., ACL, 2019)
 
 
