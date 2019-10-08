@@ -67,6 +67,10 @@ Bio-medicalのデータセットを利用し、文ごとに大規模なout-of-do
 
 ## Sequence-Level Knowledge Distillation (Kim and Rush, EMNLP, 2016)
 
+# 10.8
+
+## Chinese-Portuguese Machine Translation: A Study on Building Parallel Corpora from Comparable Texts (Liu et al., arXiv, 2018)
+
 
 
 
