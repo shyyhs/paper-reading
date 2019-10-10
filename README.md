@@ -73,4 +73,8 @@ Bio-medicalのデータセットを利用し、文ごとに大規模なout-of-do
 
 ## Bridging the Gap between Training and Inference for Neural Machine Translation (Zhang et al., ACL, 2019)
 
+# 10.10
+
+## Search Engine Guided Neural Machine Translation (Gu et al., AAAI, 2018)
+
 
