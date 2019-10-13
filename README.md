@@ -63,6 +63,10 @@ Bio-medicalのデータセットを利用し、文ごとに大規模なout-of-do
 
 ## Target Conditioned Sampling: Optimizing Data Selection for Multilingual Neural Machine Translation (Wang and Neubig, ACL, 2019)
 
+テストdomainと似ているfine-tuningのためのデータを選択する、言語ペア間と文ペア間のsimilarityの定義を提案した。まず、トレーニングの時テストdomainとのsimilarityが高いデータを選択する方がいいTarget Conditioned Samplingという理論を提出して。
+
+言語ペアと文ペアのsimilarityを測る方法が２つ提案された。１つ目は言語の辞書のoverlap。文の場合は文の単語のoverlap。２つ目はある言語でトレーニングしたLanguage Modelを使って、他の言語の文がこのモデルでの確率を測り、similarityとして使う。
+
 ## H2@BUCC18: Parallel Sentence Extraction from Comparable Corpora Using Multilingual Sentence Embeddings (Bouamor and Sajjad, BUCC, 2019)
 
 # 10.7
