@@ -48,6 +48,10 @@ RNNと比べてSelf-Attention Networks (SAN)が単語の位置の情報をうま
 
 ## Exploiting Out-of-Domain Parallel Data through Multilingual Transfer Learning for Low-Resource Neural Machine Translation (Imankulova et al., arXiv, 2019)
 
+特定のdomainの低資源言語ペアをうまく翻訳するため、本研究ではmultistage fine-tuningという方法を提出した。実験によるとIn-domainデータだけて翻訳がうまくできないが、低資源言語ペアにはout-of-domainのデータもない。高資源ペアのデータとIn-domainのデータを使うため以下の仕組みを提出した。
+
+１、Out-of-domainかつ高資源言語ペアのデータでモデルをpre-trainingする。２、すべての言語ペアのIn-domainデータでfine-tuningする。３、目標言語ペアかつIn-domainデータのみでfine-tuningする。すべてのデータを使っているので、実験によるとmultistage fine-tuningの方がone stageよるBLEUが高い。 
+
 
 # 10.4
 
