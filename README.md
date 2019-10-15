@@ -48,6 +48,10 @@ RNNと比べてSelf-Attention Networks (SAN)が単語の位置の情報をうま
 
 ## Exploiting Out-of-Domain Parallel Data through Multilingual Transfer Learning for Low-Resource Neural Machine Translation (Imankulova et al., arXiv, 2019)
 
+特定のdomainの低資源言語ペアをうまく翻訳するため、本研究ではmultistage fine-tuningという方法を提出した。実験によるとIn-domainデータだけて翻訳がうまくできないが、低資源言語ペアにはout-of-domainのデータもない。高資源ペアのデータとIn-domainのデータを使うため以下の仕組みを提出した。
+
+１、Out-of-domainかつ高資源言語ペアのデータでモデルをpre-trainingする。２、すべての言語ペアのIn-domainデータでfine-tuningする。３、目標言語ペアかつIn-domainデータのみでfine-tuningする。すべてのデータを使っているので、実験によるとmultistage fine-tuningの方がone stageよるBLEUが高い。 
+
 
 # 10.4
 
@@ -58,6 +62,10 @@ Bio-medicalのparallelデータが少ない一方、newsなどのデータがす
 Bio-medicalのデータセットを利用し、文ごとに大規模なout-of-domainデータセットからtop nの似ている文を探して新たなin-domainデータセットを作った。Out-of-domainデータセットでトレーニングしたモデルを作ったデータセットとin-domainのデータセットでfine-tuningしてbaselineより +7.5 BLEU score達成した。
 
 ## Target Conditioned Sampling: Optimizing Data Selection for Multilingual Neural Machine Translation (Wang and Neubig, ACL, 2019)
+
+テストdomainと似ているfine-tuningのためのデータを選択する、言語ペア間と文ペア間のsimilarityの定義を提案した。まず、トレーニングの時テストdomainとのsimilarityが高いデータを選択する方がいいTarget Conditioned Samplingという理論を提出して。
+
+言語ペアと文ペアのsimilarityを測る方法が２つ提案された。１つ目は言語の辞書のoverlap。文の場合は文の単語のoverlap。２つ目はある言語でトレーニングしたLanguage Modelを使って、他の言語の文がこのモデルでの確率を測り、similarityとして使う。
 
 ## H2@BUCC18: Parallel Sentence Extraction from Comparable Corpora Using Multilingual Sentence Embeddings (Bouamor and Sajjad, BUCC, 2019)
 
@@ -86,5 +94,9 @@ Bio-medicalのデータセットを利用し、文ごとに大規模なout-of-do
 # 10.11
 
 ## Memory-based Parameter Adaptation (Sprechmann et al., ICLR, 2018)
+
+# 10.15
+
+## A Japanese-English patent parallel corpus (Utiyama and Isahara, Proceedings of MT summit XI, 2007)
 
 
