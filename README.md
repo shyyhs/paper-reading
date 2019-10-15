@@ -77,4 +77,14 @@ Bio-medicalのデータセットを利用し、文ごとに大規模なout-of-do
 
 ## Search Engine Guided Neural Machine Translation (Gu et al., AAAI, 2018)
 
+## Transductive Data-Selection Algorithms for Fine-Tuning Neural Machine Translation (Poncelas et al., PSLT, 2019)
+
+## One Sentence One Model for Neural Machine Translation (Li et al., arXiv, 2016)
+
+## To Tune or Not to Tune? Adapting Pretrained Representations to Diverse Tasks (Peters et al., RepL4NLP, 2019)
+
+# 10.11
+
+## Memory-based Parameter Adaptation (Sprechmann et al., ICLR, 2018)
+
 
