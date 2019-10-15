@@ -95,4 +95,8 @@ Bio-medicalのデータセットを利用し、文ごとに大規模なout-of-do
 
 ## Memory-based Parameter Adaptation (Sprechmann et al., ICLR, 2018)
 
+# 10.15
+
+## A Japanese-English patent parallel corpus (Utiyama and Isahara, Proceedings of MT summit XI, 2007)
+
 
