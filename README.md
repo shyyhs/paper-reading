@@ -99,4 +99,8 @@ Bio-medicalのデータセットを利用し、文ごとに大規模なout-of-do
 
 ## A Japanese-English patent parallel corpus (Utiyama and Isahara, Proceedings of MT summit XI, 2007)
 
+# 10.17
+
+## Improving Transformer-based Speech Recognition Systems with Compressed Structure and Speech Attributes Augmentation (Li et al., INTERSPEECH, 2019)
+
 
