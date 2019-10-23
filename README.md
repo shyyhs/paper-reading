@@ -69,6 +69,8 @@ Bio-medicalのデータセットを利用し、文ごとに大規模なout-of-do
 
 ## H2@BUCC18: Parallel Sentence Extraction from Comparable Corpora Using Multilingual Sentence Embeddings (Bouamor and Sajjad, BUCC, 2019)
 
+
+
 # 10.7
 
 ## Distilling the knowledge in a neural network (Hinton et al., arXiv, 2015)
@@ -103,4 +105,9 @@ Bio-medicalのデータセットを利用し、文ごとに大規模なout-of-do
 
 ## Improving Transformer-based Speech Recognition Systems with Compressed Structure and Speech Attributes Augmentation (Li et al., INTERSPEECH, 2019)
 
+# 10.23
 
+## Iterative, MT-based Sentence Alignment of Parallel Texts (Sennrich and Volk, NODALIDA, 2011)
+MTシステムを用いる元言語の文と翻訳文をalignする方法はよく使われている。例えば日本語と英語の同じwikiページにある日本語文と対応している英語の文をalignする場合、日本語の文を１つずつ英語に翻訳し、すべての真の英語文とのBLEU scoreを計算、一定の閾値を超えた場合お互いの翻訳とする。
+本研究ではすでにalignした文をさらにトレーニングデータとして使い、更に良いMTシステムを訓練する。更に良いシステムは更に良いalignmengtができる。実験によると4 iterationまで翻訳の質は向上している。
+Iterative法は様々な場面でよく使われていると思う、効果もいつも多少ある。
