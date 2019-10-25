@@ -93,6 +93,9 @@ Bio-medicalのデータセットを利用し、文ごとに大規模なout-of-do
 
 ## To Tune or Not to Tune? Adapting Pretrained Representations to Diverse Tasks (Peters et al., RepL4NLP, 2019)
 
+ELMoやBERTなどのPretrainedモデルは２種類の使い方がある：１．パラメータをfreezeして後ろのタスクspecifiedレイヤーのみトレーニングするfeature extraction ２．Pretrainedモデルとタスクspecifiedレイヤー一緒にトレーニングするfine-tuning
+本研究ではELMoとBERTで様々なテスクで実験し、feature extractionとfine-tuningの使い分けを解明した。基本的にはELMoを使う場合feature extractionの方が効果が良い、BERTを使う場合fine-tuningの方が良い。タスクによってもsourceタスクとターゲットタスクが近ければ近いほどfine-tuningの効果が良い、逆にfeature extractionの方がよい。
+
 # 10.11
 
 ## Memory-based Parameter Adaptation (Sprechmann et al., ICLR, 2018)
