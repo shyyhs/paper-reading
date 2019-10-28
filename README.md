@@ -114,3 +114,12 @@ ELMoやBERTなどのPretrainedモデルは２種類の使い方がある：１�
 MTシステムを用いる元言語の文と翻訳文をalignする方法はよく使われている。例えば日本語と英語の同じwikiページにある日本語文と対応している英語の文をalignする場合、日本語の文を１つずつ英語に翻訳し、すべての真の英語文とのBLEU scoreを計算、一定の閾値を超えた場合お互いの翻訳とする。
 本研究ではすでにalignした文をさらにトレーニングデータとして使い、更に良いMTシステムを訓練する。更に良いシステムは更に良いalignmengtができる。実験によると4 iterationまで翻訳の質は向上している。
 Iterative法は様々な場面でよく使われていると思う、効果もいつも多少ある。
+
+# 10.28
+## Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer (Raffel, arXiv, 2019)
+前半は様々なpre-trainingの実験。 後半はデータセットとfine-tuningの実験の説明。今日は前半を紹介する。
+Text-to-Text Transfer Transformer (T5)を利用し、Sentiment analysis, Coreference resolution, Sentence completionなどのタスクを全てText-to-Textのように変換した。例えばcoreference resolutionのタスクは"The city councilmen refused the demonstrators a permit because \*they\* feared violence"をインプットとして、\*は特別の記号でモデルはその中の単語を予測する。ターゲットは"The city councilmen"。他のタスクもうまくText-to-Textのように変換した。
+関連研究の紹介としてSelf-Attentionなども非常にわかりやすく説明した。
+Pre-trainingの実験をいくつした： LM, Deshuffling (shuffleした文を元の文にする), BERT-style。　そのうちBERT-styleが一番効果が良い。BERT-styleのうち、マスクやDrop,Replace spansなどの実験も比較した。 
+実験のdetailが詳細に説明したので、vocabの選択(3.13)、モデルのパラメータ(3.11)、MASKの方法(3.14)などが参考になった。
+
