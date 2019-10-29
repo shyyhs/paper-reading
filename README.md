@@ -123,3 +123,8 @@ Text-to-Text Transfer Transformer (T5)を利用し、Sentiment analysis, Corefer
 Pre-trainingの実験をいくつした： LM, Deshuffling (shuffleした文を元の文にする), BERT-style。　そのうちBERT-styleが一番効果が良い。BERT-styleのうち、マスクやDrop,Replace spansなどの実験も比較した。 
 実験のdetailが詳細に説明したので、vocabの選択(3.13)、モデルのパラメータ(3.11)、MASKの方法(3.14)などが参考になった。
 
+後半はデータセットの説明とMulti-task fine-tuningの実験。
+ネットでクロールした大規模なデータセットC４とさらにC４から様々なdomainのデータを抽出し、news, web, wikipediaなどのかくdomainのデータセットも作った。
+GLEUや機械翻訳などのタスクでmulti-task fine-tuningの実験を行った。Pre-trainedモデルのパラメータをどのように固定するか、 fine-tuningの時各タスクデータの割合の設定など、最近の技術を使ったが、だいたいの実験においてbaselineの結果が一番高い。
+（データセットやモデルが多（大き）ければ多（大き）いほど結果が良いというような結論と思う）
+
