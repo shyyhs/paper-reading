@@ -128,3 +128,10 @@ Pre-trainingの実験をいくつした： LM, Deshuffling (shuffleした文を�
 GLEUや機械翻訳などのタスクでmulti-task fine-tuningの実験を行った。Pre-trainedモデルのパラメータをどのように固定するか、 fine-tuningの時各タスクデータの割合の設定など、最近の技術を使ったが、だいたいの実験においてbaselineの結果が一番高い。
 （データセットやモデルが多（大き）ければ多（大き）いほど結果が良いというような結論と思う）
 
+# 10.31
+## Powerful ideas in computational linguistics - implications for problem solving and education (Fiacher et al., ACL, 1979)
+（面白く古い論文を数枚ダウンロードし、電車で時間を潰す）
+高校生のtransfer learningの研究。その時代はコンピュータを知る教育者は数少なく、言語学を知るプログラマーも少ない。CLを勉強すれば学生がどのような能力を得るかを研究した。
+オープンな雰囲気（授業のようではなく、ゲームのよう）で高校生に基本的なアルゴリズムやCLに関する知識を問題解決の形で教え、どのような新しい考え方が生み出すのを観察する。
+認知科学によると、問題解決に基本的な手段が共通である。CLで学んだ知識（backtracking, rule system, incremental design）を他の問題 (domain) にも活かせる (adaptation) ことを証明した。例としてはある学生がCLを勉強した後、「数学は神が決めたものではなく、問題解決のために作ったものかつgrammarにより説明できる」のを意識した。
+
