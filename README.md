@@ -139,7 +139,8 @@ GLEUや機械翻訳などのタスクでmulti-task fine-tuningの実験を行っ
 ## Read papers from ACL1980 and ACL1981
 ## Mainly working on LREC and ACL papers.
 
-## 12.10 Finally, I've finished my LREC and ACL paper, hope they can be accepted :)
+# 12.10 
+## Finally, I've finished my LREC and ACL papers, hope they can be accepted :)
 
 # 12.10
 
