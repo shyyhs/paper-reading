@@ -159,3 +159,13 @@ and (3) Conterfactuals P(y_x | x’, y’) which means, “What it would be had 
 , which current model can only reach the first layer.
 
 They proposed a Structural Causal Models (SCM) to better address this problem.
+
+# 12.11
+
+## ObjectNet: A large-scale bias-controlled dataset for pushing the limits of object recognition models
+
+https://objectnet.dev/index.html
+
+They constructed a image dataset with 50,000 test images (only test set) where the rotation, background and viewpoint are controlled for object recognition. The rotation or background are very unnormal, the task is easy for human but very hard for current models (even strong models).
+
+For example, the SOTA model has near 90% Top 5 accuracy on ImageNet but only 50% Top 5 accuracy on this ObjectNet.
