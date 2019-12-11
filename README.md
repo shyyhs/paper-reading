@@ -135,3 +135,19 @@ GLEUや機械翻訳などのタスクでmulti-task fine-tuningの実験を行っ
 オープンな雰囲気（授業のようではなく、ゲームのよう）で高校生に基本的なアルゴリズムやCLに関する知識を問題解決の形で教え、どのような新しい考え方が生み出すのを観察する。
 認知科学によると、問題解決に基本的な手段が共通である。CLで学んだ知識（backtracking, rule system, incremental design）を他の問題 (domain) にも活かせる (adaptation) ことを証明した。例としてはある学生がCLを勉強した後、「数学は神が決めたものではなく、問題解決のために作ったものかつgrammarにより説明できる」のを意識した。
 
+# 12.10
+## Theoretical Impediments to Machine Learning With Seven Sparks from the Causal Revolution (Judea Pearl, arXiv, 2018)
+
+Current ML systems operate in a statistical or model-free way. But in reality sometimes statistical (and black-box) we is not enough to explain many phenomenons thus not enough to build Strong AI.
+
+The author gives three layer of causal hierarchy:
+
+(1) Association: P(y|x), which means the possibility of y when seeing x
+
+(2) Intervention: P(y|do(x), z), which means “what will happen IF we do x”
+
+and (3) Conterfactuals P(y_x | x’, y’) which means, “What it would be had I did x’ rather than x”
+
+, which current model can only reach the first layer.
+
+They proposed a Structural Causal Models (SCM) to better address this problem.
