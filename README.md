@@ -1,6 +1,6 @@
 # paper-reading
 
-# 10.1
+# 19.10.1
 
 ##  Exploiting Sentential Context for Neural Machine Translation (Wang et al., arXiv, 2019)
 
@@ -24,7 +24,7 @@ RNNと比べてSelf-Attention Networks (SAN)が単語の位置の情報をうま
 
 本研究では人ごとに固有なbias vectorを与え、出力層のsoftmaxのところへ加え、人の特徴を考慮したモデルを作った。full_biasのモデルではすべての人にvocab sizeのbiasを作り、人と人の関連性を考えていない。fact_biasモデルではr個の特徴dimを考え、speakerを特徴空間へ投影し、biasを計算する。この手法によって人の関連性が考慮され、parameterも大幅に減少した。結果としてはBaselineよりBLEU scoreが0.5 point向上を達成した。
 
-# 10.2
+# 19.10.2
 
 ## Findings of the First Shared Task on Machine Translation Robustness (Li et al., arXiv, 2019)
 
@@ -44,7 +44,7 @@ RNNと比べてSelf-Attention Networks (SAN)が単語の位置の情報をうま
 
 本研究ではfine-tuningの時にin-domainのデータのみならずin-domainとout-of-domainのデータをミックスしてfine-tuningする。方法は単純だがover-fittingを確実に避けた。さらに、従来はin-domainデータしか処理できないが、今のモデルはin-domainとout-of-domain両方処理できる。 
 
-# 10.3
+# 19.10.3
 
 ## Exploiting Out-of-Domain Parallel Data through Multilingual Transfer Learning for Low-Resource Neural Machine Translation (Imankulova et al., arXiv, 2019)
 
@@ -53,7 +53,7 @@ RNNと比べてSelf-Attention Networks (SAN)が単語の位置の情報をうま
 １、Out-of-domainかつ高資源言語ペアのデータでモデルをpre-trainingする。２、すべての言語ペアのIn-domainデータでfine-tuningする。３、目標言語ペアかつIn-domainデータのみでfine-tuningする。すべてのデータを使っているので、実験によるとmultistage fine-tuningの方がone stageよるBLEUが高い。 
 
 
-# 10.4
+# 19.10.4
 
 ## Exploring Transfer Learning and Domain Data Selection for the Bio-medical translation (Hira et al., WMT, 2019)
 
@@ -71,19 +71,19 @@ Bio-medicalのデータセットを利用し、文ごとに大規模なout-of-do
 
 
 
-# 10.7
+# 19.10.7
 
 ## Distilling the knowledge in a neural network (Hinton et al., arXiv, 2015)
 
 ## Sequence-Level Knowledge Distillation (Kim and Rush, EMNLP, 2016)
 
-# 10.8
+# 19.10.8
 
 ## Chinese-Portuguese Machine Translation: A Study on Building Parallel Corpora from Comparable Texts (Liu et al., arXiv, 2018)
 
 ## Bridging the Gap between Training and Inference for Neural Machine Translation (Zhang et al., ACL, 2019)
 
-# 10.10
+# 19.10.10
 
 ## Search Engine Guided Neural Machine Translation (Gu et al., AAAI, 2018)
 
@@ -96,26 +96,26 @@ Bio-medicalのデータセットを利用し、文ごとに大規模なout-of-do
 ELMoやBERTなどのPretrainedモデルは２種類の使い方がある：１．パラメータをfreezeして後ろのタスクspecifiedレイヤーのみトレーニングするfeature extraction ２．Pretrainedモデルとタスクspecifiedレイヤー一緒にトレーニングするfine-tuning
 本研究ではELMoとBERTで様々なテスクで実験し、feature extractionとfine-tuningの使い分けを解明した。基本的にはELMoを使う場合feature extractionの方が効果が良い、BERTを使う場合fine-tuningの方が良い。タスクによってもsourceタスクとターゲットタスクが近ければ近いほどfine-tuningの効果が良い、逆にfeature extractionの方がよい。
 
-# 10.11
+# 19.10.11
 
 ## Memory-based Parameter Adaptation (Sprechmann et al., ICLR, 2018)
 
-# 10.15
+# 19.10.15
 
 ## A Japanese-English patent parallel corpus (Utiyama and Isahara, Proceedings of MT summit XI, 2007)
 
-# 10.17
+# 19.10.17
 
 ## Improving Transformer-based Speech Recognition Systems with Compressed Structure and Speech Attributes Augmentation (Li et al., INTERSPEECH, 2019)
 
-# 10.23
+# 19.10.23
 
 ## Iterative, MT-based Sentence Alignment of Parallel Texts (Sennrich and Volk, NODALIDA, 2011)
 MTシステムを用いる元言語の文と翻訳文をalignする方法はよく使われている。例えば日本語と英語の同じwikiページにある日本語文と対応している英語の文をalignする場合、日本語の文を１つずつ英語に翻訳し、すべての真の英語文とのBLEU scoreを計算、一定の閾値を超えた場合お互いの翻訳とする。
 本研究ではすでにalignした文をさらにトレーニングデータとして使い、更に良いMTシステムを訓練する。更に良いシステムは更に良いalignmengtができる。実験によると4 iterationまで翻訳の質は向上している。
 Iterative法は様々な場面でよく使われていると思う、効果もいつも多少ある。
 
-# 10.28
+# 19.10.28
 ## Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer (Raffel, arXiv, 2019)
 前半は様々なpre-trainingの実験。 後半はデータセットとfine-tuningの実験の説明。今日は前半を紹介する。
 Text-to-Text Transfer Transformer (T5)を利用し、Sentiment analysis, Coreference resolution, Sentence completionなどのタスクを全てText-to-Textのように変換した。例えばcoreference resolutionのタスクは"The city councilmen refused the demonstrators a permit because \*they\* feared violence"をインプットとして、\*は特別の記号でモデルはその中の単語を予測する。ターゲットは"The city councilmen"。他のタスクもうまくText-to-Textのように変換した。
@@ -128,16 +128,20 @@ Pre-trainingの実験をいくつした： LM, Deshuffling (shuffleした文を�
 GLEUや機械翻訳などのタスクでmulti-task fine-tuningの実験を行った。Pre-trainedモデルのパラメータをどのように固定するか、 fine-tuningの時各タスクデータの割合の設定など、最近の技術を使ったが、だいたいの実験においてbaselineの結果が一番高い。
 （データセットやモデルが多（大き）ければ多（大き）いほど結果が良いというような結論と思う）
 
-# 10.31
+# 19.10.31
 ## Powerful ideas in computational linguistics - implications for problem solving and education (Fiacher et al., ACL, 1979)
 （面白く古い論文を数枚ダウンロードし、電車で時間を潰す）
 高校生のtransfer learningの研究。その時代はコンピュータを知る教育者は数少なく、言語学を知るプログラマーも少ない。CLを勉強すれば学生がどのような能力を得るかを研究した。
 オープンな雰囲気（授業のようではなく、ゲームのよう）で高校生に基本的なアルゴリズムやCLに関する知識を問題解決の形で教え、どのような新しい考え方が生み出すのを観察する。
 認知科学によると、問題解決に基本的な手段が共通である。CLで学んだ知識（backtracking, rule system, incremental design）を他の問題 (domain) にも活かせる (adaptation) ことを証明した。例としてはある学生がCLを勉強した後、「数学は神が決めたものではなく、問題解決のために作ったものかつgrammarにより説明できる」のを意識した。
 
+# 19.11.*
+## Read papers from ACL1980 and ACL1981
+## Mainly working on LREC and ACL papers.
+
+## 12.10 Finally, I've finished my LREC and ACL paper, hope they can be accepted :)
 
 # 12.10
-## Finally, I've finished my LREC and ACL paper, hope they can be accepted :)
 
 ## Theoretical Impediments to Machine Learning With Seven Sparks from the Causal Revolution (Judea Pearl, arXiv, 2018)
 
