@@ -160,8 +160,6 @@ and (3) Conterfactuals P(y_x | x’, y’) which means, “What it would be had 
 
 They proposed a Structural Causal Models (SCM) to better address this problem.
 
-[ここから](#jump-there)
-<a name="jump-there">ジャンプ先に表示される文字列</a>
 
 # 12.11
 
