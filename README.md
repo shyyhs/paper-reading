@@ -169,3 +169,7 @@ https://objectnet.dev/index.html
 They constructed a image dataset with 50,000 test images (only test set) where the rotation, background and viewpoint are controlled for object recognition. The rotation or background are very unnormal, the task is easy for human but very hard for current models (even strong models).
 
 For example, the SOTA model has near 90% Top 5 accuracy on ImageNet but only 50% Top 5 accuracy on this ObjectNet.
+
+# 2020.07.20
+
+Machine translation related papers of ACL2020
