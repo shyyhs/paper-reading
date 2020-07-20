@@ -151,3 +151,7 @@ and (3) Conterfactuals P(y_x | x’, y’) which means, “What it would be had 
 , which current model can only reach the first layer.
 
 They proposed a Structural Causal Models (SCM) to better address this problem.
+
+# 2020.07.20
+
+Machine Translation related papers at ACL2020
